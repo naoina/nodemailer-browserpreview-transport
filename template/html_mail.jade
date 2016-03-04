@@ -1,28 +1,32 @@
-style.
-  .mail-label { text-align: right; color: #999; }
-  .mail-table { width: 100%; height: 100%; }
-  .mail-body { width: 100%; height: 100%; }
-
-table.mail-table
-  tr
-    td.mail-label Subject:
-    td= subject
-  tr
-    td.mail-label From:
-    td= from
-  tr
-    td.mail-label To:
-    td= to
-  tr
-    td.mail-label Attachments:
-    td
-      each attachment in attachments
-        a(href=attachment.path, target="_blank")= attachment.filename
-        br
-  tr
-    td
-    td &nbsp;
-  tr
-    td
-    td.mail-body
-      iframe(srcdoc=html, scrolling="auto", frameborder="0", style="width:100%;height:100%;")
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    style.
+      .mail-label { text-align: right; color: #999; }
+      .mail-table { width: 100%; height: 100%; }
+      .mail-body { width: 100%; height: 100%; }
+  body
+    table.mail-table
+      tr
+        td.mail-label Subject:
+        td= subject
+      tr
+        td.mail-label From:
+        td= from
+      tr
+        td.mail-label To:
+        td= to
+      tr
+        td.mail-label Attachments:
+        td
+          each attachment in attachments
+            a(href=attachment.path, target="_blank")= attachment.filename
+            br
+      tr
+        td
+        td &nbsp;
+      tr
+        td
+        td.mail-body
+          iframe(srcdoc=html, scrolling="auto", frameborder="0", style="width:100%;height:100%;")
