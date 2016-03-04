@@ -1,0 +1,29 @@
+{
+  "name": "nodemailer-browserpreview-transport",
+  "version": "0.1.0",
+  "description": "In-browser preview transport module for Nodemailer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naoina/nodemailer-browserpreview-transport.git"
+  },
+  "keywords": [
+    "nodemailer",
+    "email",
+    "preview",
+    "browser"
+  ],
+  "author": "Naoya Inada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/naoina/nodemailer-browserpreview-transport/issues"
+  },
+  "homepage": "https://github.com/naoina/nodemailer-browserpreview-transport",
+  "dependencies": {
+    "jade": "^1.11.0",
+    "openurl": "^1.1.1"
+  }
+}
