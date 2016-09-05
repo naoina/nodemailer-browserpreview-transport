@@ -17,6 +17,13 @@ html
       tr
         td.mail-label To:
         td= to
+      - if (cc)
+        tr
+          td.mail-label Cc:
+          td= cc
+      - if (bcc)
+        tr
+          td.mail-label Bcc:
       tr
         td.mail-label Attachments:
         td
