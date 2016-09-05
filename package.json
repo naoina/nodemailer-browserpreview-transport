@@ -1,6 +1,6 @@
 {
   "name": "nodemailer-browserpreview-transport",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "In-browser preview transport module for Nodemailer",
   "main": "index.js",
   "scripts": {
