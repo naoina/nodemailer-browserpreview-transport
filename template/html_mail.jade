@@ -32,6 +32,10 @@ html
           each attachment in attachments
             a(href=attachment.path, target="_blank")= attachment.filename
             br
+      - if (context)
+        tr
+          td.mail-label Context:
+          td= JSON.stringify(context)
       tr
         td
         td &nbsp;
