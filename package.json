@@ -24,6 +24,7 @@
   "homepage": "https://github.com/naoina/nodemailer-browserpreview-transport",
   "dependencies": {
     "jade": "^1.11.0",
+    "mkdirp": "^0.5.1",
     "openurl": "^1.1.1"
   }
 }
