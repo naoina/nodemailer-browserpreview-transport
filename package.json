@@ -1,6 +1,6 @@
 {
   "name": "nodemailer-browserpreview-transport",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "In-browser preview transport module for Nodemailer",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/naoina/nodemailer-browserpreview-transport.git"
+    "url": "git+https://github.com/joshjordan/nodemailer-browserpreview-transport.git"
   },
   "keywords": [
     "nodemailer",
@@ -25,6 +25,7 @@
   "dependencies": {
     "jade": "^1.11.0",
     "mkdirp": "^0.5.1",
+    "nodemailer": "^6.7.5",
     "openurl": "^1.1.1"
   }
 }
