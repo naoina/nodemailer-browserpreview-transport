@@ -35,7 +35,11 @@ html
       - if (context)
         tr
           td.mail-label Context:
-          td= JSON.stringify(context)
+          td
+            div#context(style="display:none;")
+              pre= JSON.stringify(context, null, 2)
+              a(href="#", onclick="document.querySelector('#context').style = 'display:none;'; document.querySelector('#show').style = ''") (hide)
+            a#show(href="#", onclick="document.querySelector('#context').style = ''; document.querySelector('#show').style = 'display:none;'") (show)
       tr
         td
         td &nbsp;
