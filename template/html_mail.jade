@@ -7,6 +7,7 @@ html
       .mail-table { width: 100%; height: 100%; }
       .mail-body { width: 100%; height: 100%; }
   body
+    a(href='text_preview.html') View plain text version
     table.mail-table
       tr
         td.mail-label Subject:
@@ -31,6 +32,14 @@ html
           each attachment in attachments
             a(href=attachment.path, target="_blank")= attachment.filename
             br
+      - if (context)
+        tr
+          td.mail-label Context:
+          td
+            div#context(style="display:none;")
+              pre= JSON.stringify(context, null, 2)
+              a(href="#", onclick="document.querySelector('#context').style = 'display:none;'; document.querySelector('#show').style = ''") (hide)
+            a#show(href="#", onclick="document.querySelector('#context').style = ''; document.querySelector('#show').style = 'display:none;'") (show)
       tr
         td
         td &nbsp;
